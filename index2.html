@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>90s Retro Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        blink { animation: blinker 1s linear infinite; }
+        @keyframes blinker { 50% { opacity: 0; } }
+        body { cursor: url('custom-cursor.cur'), auto; background: url('tile-background.png') repeat; }
+        h1 { text-shadow: 2px 2px #ff0000; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My 90s Web Page!</h1>
+    <blink>Retro vibes only!</blink>
+    <marquee>Enjoy your trip down memory lane!</marquee>
+    <embed src="background-music.mid" autostart="true" loop="true">
+    <img src="under-construction.gif" alt="Under Construction">
+    <div id="counter">Visitor Count: <span id="hit-count">0</span></div>
+    <script src="script.js"></script>
+</body>
+</html>

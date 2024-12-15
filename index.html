@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Web Vibe</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        blink {
+            animation: blinker 1s linear infinite;
+        }
+        @keyframes blinker {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<frameset cols="20%,80%">
+    <frame src="nav.html">
+    <frame src="main.html">
+</frameset>
+<table border="1">
+    <tr>
+        <td>Navigation</td>
+        <td>Main Content</td>
+    </tr>
+</table>
+body {
+    background: url('tile-background.png') repeat;
+}
+<embed src="background-music.mid" autostart="true" loop="true">
+    <form action="submit-guestbook.php" method="post">
+        <textarea name="message"></textarea>
+        <input type="submit" value="Sign Guestbook">
+    </form>
+    <img src="under-construction.gif" alt="Under Construction">
+    
+<body>
+    <h1>Welcome to My Retro Website!</h1>
+    <blink>Retro vibes only!</blink>
+    <marquee>Welcome to the early web!</marquee>
+    <img src="dancing-baby.gif" alt="Dancing Baby">
+    <div id="counter">Visitor Count: <span id="hit-count">0</span></div>
+    <script src="script.js"></script>
+</body>
+</html>
